@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Form  */
+.input {
+  @apply block w-full p-5 mt-3 text-white bg-threads-gray-dark rounded-xl placeholder:text-threads-gray-light;
+}
+.label {
+  @apply text-base font-bold text-white;
+}
+
+/* Post */
+.post {
+  @apply flex gap-5 py-4 duration-150 border-b border-threads-gray-dark hover:bg-threads-gray-dark hover:bg-opacity-80;
+}
+.options {
+  @apply absolute right-0 z-10 overflow-hidden border shadow top-5 bg-threads-modal border-threads-gray-light rounded-xl;
+}
+.option {
+  @apply px-4 py-1 duration-150 cursor-pointer bg-threads-modal hover:bg-threads-gray-dark;
+}
+
+/* Modal */
+.modale-background {
+  @apply fixed top-0 bottom-0 left-0 right-0 z-30 flex items-center justify-center bg-gray-900 bg-opacity-80;
+}
+.modale-foreground {
+  @apply rounded-xl shadow lg:w-[740px] w-10/12 overflow-y-auto p-5 bg-threads-modal border border-threads-gray-light;
+}
+.modale-user-foreground {
+  @apply rounded-xl shadow lg:w-[740px] w-10/12 overflow-y-auto p-5 bg-threads-modal border border-threads-gray-light;
+}
+
+/* Auth */
+.auth-method {
+  @apply p-5 duration-150 border rounded-3xl border-threads-gray-light bg-threads-gray hover:bg-gray-900;
+}
+.title {
+  @apply text-xl font-bold text-center;
+}
+
+/* User */
+.user-button {
+  @apply w-full py-3 mt-3 text-center duration-150 border cursor-pointer border-threads-gray-light rounded-xl hover:bg-threads-gray-light;
+}
+
+.new-thread-btn {
+  @apply px-4 py-2 mt-4 transition duration-300 rounded-full bg-neutral-100 text-neutral-900 hover:bg-neutral-300;
+}
+
+.disabled-new-thread-btn {
+  @apply bg-opacity-50 pointer-events-none cursor-none hover:bg-opacity-50 hover:bg-neutral-100;
+}
